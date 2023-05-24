@@ -1,34 +1,79 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <title>illmi works</title>
-    <meta name="description" content="イベント照明">
-  <!-- CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
+    <head>
+        <meta charset="utf-8">
+        <title>WCB Conference</title>
+        <meta name="description" content="オンラインで行っているWebサイト制作の勉強会">
+        <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <body>
-    <div id="home" class="big-bg">
-      <header class="page-header wrapper">
-        <h1><a href="index.html"><img class="logo" src="images/logo.jpg" alt="illmiworksホーム"></a><h1>
-        <nav>
-          <ul class="main-nav">
-            <li><a href="news.html">News</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+    <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
 
-      <div class="home-content wrapper">
-        <h2 class="page-title">空間に彩りと感動を。</h2>
-        <p>あなたの大切なイベントを照明で彩ります。<p>
-        <a class="button" href="menu.html">メニューを見る</a>
-      </div>
-    </div><!-- /#home -->
-  </body>
+	<body>
+        <header>
+            <div class="wrapper">
+                <a href="#hero">
+                  <img class="logo" src="images/logo.jpg" alt="illmiworksホーム">
+                </a>
+                <nav>
+                    <button class="btn-menu">Menu</button>
+                    <ul class="main-nav">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
+        <section id="hero">
+            <div class="wrapper">
+                <h1>空間に彩りと感動を。</h1>
+                <p>あなたの大切なイベントを光で彩ります。</p>
+            </div>
+        </section>
+
+        <section id="about" class="wrapper">
+            <h2>About</h2>
+            <p>
+                「illumi works」とは、広島を拠点に活動する照明スタッフ（ライディングエンジニア）です。<br>
+                主に学校イベントや地域イベントの照明を専門としています。<br>
+                私たちの技術と創造力で、あなたの大切なイベントを鮮やかな光と魅力的な演出で満たします。<br>
+                広島のコミュニティをサポートするために、私たちは照明業界の最新トレンドや技術を追求し、常に進化を続けています。<br>
+                illumi worksは、イベントの成功に貢献するパートナーです。
+            </p>
+            <div class="picture">
+              <ul>
+                <li><img class="item" src="images/stage_red.jpg" alt=""></li>
+                <li><img class="item" src="images/stage_green.jpg" alt=""></li>
+                <li><img class="item" src="images/stage_blue.jpg" alt=""></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>contact</h2>
+            <form class="contact-form" action="#">
+                <label>Name</label>
+                <input class="contact-field" type="text" placeholder="">
+                <label>Email</label>
+                <input class="contact-field" type="email" placeholder="例：hello@example.com">
+                <input class="contact-btn" type="submit" value="Join Now!">
+            </form>
+
+            <div class="footer wrapper">
+                <p>
+                    <!-- <a href="">お問い合わせ</a> /  -->
+                    <small>&copy; 2023 illumi works</small>
+                </p>
+            </div>
+        </section>
+
+    <!-- JavaScript -->
+        <script src="js/script.js"></script>
+	</body>
 </html>
